@@ -28,6 +28,7 @@ int main() {
         cout << "|         ANIMALS        |" << endl;
         cout << "|       ----------       |" << endl;
         cout << "|Leopardo, Jabuti, Macaco|" << endl;
+        cout << "|  Girafa, Jaguatirica   |" << endl;
         cout << "|       ----------       |" << endl;
         cout << "|________________________|" << endl;
         cout << "Which animal you want insert data?: ";
@@ -86,6 +87,42 @@ int main() {
                 cout << "Quantity of Food per Month: " << y << endl;
                 cout << "Price Calculeted per Month: " << calc << endl;
                 cout << "Price Estimated: 15000" << endl;
+
+                repeat = false;
+            } else if (nome == "Girafa" || nome == "girafa") {
+                animalIsValid = true;
+                cout << "Please enter the NUMBERS of Animals: ";
+                cin >> a.quantidade;
+                a.price = 1200,00;
+                a.comida = 350;
+                a.kilo = 5;
+                int x = a.comida / a.quantidade;
+                const int y = a.comida * a.kilo / 30;
+                int calc = a.comida / a.quantidade * a.price;
+                cout << "Animal: Leopardo" << endl;
+                cout << "Quantity of Food per Animal: 5" << endl;
+                cout << "Quantity of Food per Day: " << x << endl;
+                cout << "Quantity of Food per Month: " << y << endl;
+                cout << "Price Calculeted per Month: " << calc << endl;
+                cout << "Price Estimated: 14000" << endl;
+
+                repeat = false;
+            } else if (nome == "Jaguatirica" || nome == "jaguatirica") {
+                animalIsValid = true;
+                cout << "Please enter the NUMBERS of Animals: ";
+                cin >> a.quantidade;
+                a.price = 500,00;
+                a.comida = 500;
+                a.kilo = 5;
+                int x = a.comida / a.quantidade;
+                const int y = a.comida * a.kilo / 30;
+                int calc = a.comida / a.quantidade * a.price;
+                cout << "Animal: Leopardo" << endl;
+                cout << "Quantity of Food per Animal: 5" << endl;
+                cout << "Quantity of Food per Day: " << x << endl;
+                cout << "Quantity of Food per Month: " << y << endl;
+                cout << "Price Calculeted per Month: " << calc << endl;
+                cout << "Price Estimated: 11000" << endl;
 
                 repeat = false;
             } else {
